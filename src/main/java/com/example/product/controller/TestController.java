@@ -16,6 +16,21 @@ public class TestController {
 
     @GetMapping("/product/{userId}")
     public  String getProduc(@PathVariable("userId") Long userId){
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "SUCCESS";
+    };
+
+    @GetMapping("/product2/{userId}")
+    public  String getProduc2(@PathVariable("userId") Long userId){
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return "SUCCESS";
     };
 
