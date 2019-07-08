@@ -34,4 +34,9 @@ public class TestController {
         return "SUCCESS";
     };
 
+    @GetMapping("/product/test")
+    public  String test(){
+        return "SUCCESS";
+    };
+
 }
