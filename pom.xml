@@ -49,6 +49,21 @@
             <artifactId>spring-boot-starter-jetty</artifactId>
         </dependency>
         <!--jetty-->
+
+        <!--security-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <!--security-->
+
+        <!--base64-->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>8.5.31</version>
+        </dependency>
+        <!--base64-->
     </dependencies>
 
     <dependencyManagement>
