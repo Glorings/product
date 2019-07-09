@@ -1,11 +1,11 @@
 package com.example.product.controller;
 
 
+import com.alibaba.fastjson.JSON;
+import com.example.product.service.bo.UserBo;
 import org.apache.tomcat.util.codec.binary.Base64;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 /**
@@ -45,5 +45,17 @@ public class TestController {
         logger.info(str);
         return "SUCCESS";
     };
+
+    @GetMapping("/productParamGet")
+    public  String productParamGet(UserBo user){
+        logger.info(JSON.toJSONString(user));
+        return "AAAA";
+    }
+
+    @PostMapping("/productParamPost")
+    public  String productParamPost(@RequestBody UserBo user){
+        logger.info(JSON.toJSONString(user));
+        return "BBBB";
+    }
 
 }
