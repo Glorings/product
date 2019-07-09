@@ -58,4 +58,10 @@ public class TestController {
         return "BBBB";
     }
 
+
+    @PostMapping("/testToken")
+    public  String testToken(@RequestHeader("token") String header){
+        logger.info(header);
+        return "CCC";
+    };
 }
