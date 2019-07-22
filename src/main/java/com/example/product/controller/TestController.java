@@ -64,4 +64,10 @@ public class TestController {
         logger.info(header);
         return "CCC";
     };
+
+
+    @GetMapping("/hello/rateLimit")
+    public  String rateLimit(){
+        return "UUU";
+    };
 }
